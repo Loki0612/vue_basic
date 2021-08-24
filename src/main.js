@@ -2,7 +2,7 @@
  * @Description:
  * @Author: yzw
  * @Date: 2020-06-23 06:15:04
- * @LastEditTime: 2021-08-20 10:06:57
+ * @LastEditTime: 2021-08-24 15:48:47
  * @LastEditors: yzw
  * @Reference:
  */
@@ -11,7 +11,7 @@ import Vue from 'vue'
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
 import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+import '@/assets/theme/index.css'
 
 import moment from 'moment'
 import _ from 'lodash'

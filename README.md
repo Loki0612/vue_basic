@@ -1,5 +1,5 @@
 
-# vue-模板项目
+# 数字化康复科室管理系统
 
 - [项目结构](#xmjg)
 - [启动项目](#qdxm)
@@ -46,6 +46,7 @@
 ## <span id="qdxm">启动项目</span>
 
 ```bash
+git clone git@192.168.1.222:lokizw/recovery_management.git
 
 cd recovery_management
 

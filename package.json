@@ -8,7 +8,7 @@
     "build": "vue-cli-service build",
     "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml",
     "lint": "eslint --ext .js,.vue src",
-    "buildPage": "node lib/buildPage",
+    "buildPage": "node lib/buildPage"
   },
   "dependencies": {
     "axios": "0.21.1",

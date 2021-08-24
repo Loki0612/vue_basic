@@ -1,0 +1,84 @@
+├─src
+|  ├─App.vue
+|  ├─main.js
+|  ├─permission.js
+|  ├─settings.js
+|  ├─views
+|  |   ├─404.vue
+|  |   ├─user
+|  |   |  └index.vue
+|  |   ├─login
+|  |   |   └index.vue
+|  |   ├─home
+|  |   |  └index.vue
+|  ├─utils
+|  |   ├─auth.js
+|  |   ├─get-page-title.js
+|  |   ├─index.js
+|  |   ├─request.js
+|  |   └validate.js
+|  ├─styles
+|  |   ├─element-ui.scss
+|  |   ├─index.scss
+|  |   ├─mixin.scss
+|  |   ├─sidebar.scss
+|  |   ├─transition.scss
+|  |   └variables.scss
+|  ├─store
+|  |   ├─getters.js
+|  |   ├─index.js
+|  |   ├─modules
+|  |   |    ├─app.js
+|  |   |    ├─settings.js
+|  |   |    └user.js
+|  ├─router
+|  |   └index.js
+|  ├─layout
+|  |   ├─index.vue
+|  |   ├─mixin
+|  |   |   └ResizeHandler.js
+|  |   ├─components
+|  |   |     ├─AppMain.vue
+|  |   |     ├─index.js
+|  |   |     ├─Navbar.vue
+|  |   |     ├─Sidebar
+|  |   |     |    ├─FixiOSBug.js
+|  |   |     |    ├─index.vue
+|  |   |     |    ├─Item.vue
+|  |   |     |    ├─Link.vue
+|  |   |     |    ├─Logo.vue
+|  |   |     |    └SidebarItem.vue
+|  ├─icons
+|  |   ├─index.js
+|  |   ├─svgo.yml
+|  |   ├─svg
+|  |   |  ├─dashboard.svg
+|  |   |  ├─example.svg
+|  |   |  ├─eye-open.svg
+|  |   |  ├─eye.svg
+|  |   |  ├─form.svg
+|  |   |  ├─home.svg
+|  |   |  ├─link.svg
+|  |   |  ├─nested.svg
+|  |   |  ├─password.svg
+|  |   |  ├─table.svg
+|  |   |  ├─tree.svg
+|  |   |  └user.svg
+|  ├─components
+|  |     ├─SvgIcon
+|  |     |    └index.vue
+|  |     ├─Hamburger
+|  |     |     └index.vue
+|  |     ├─Breadcrumb
+|  |     |     └index.vue
+|  ├─assets
+|  |   ├─404_images
+|  |   |     ├─404.png
+|  |   |     └404_cloud.png
+|  ├─api
+|  |  └user.js
+├─public
+|   ├─favicon.ico
+|   └index.html
+├─build
+|   └index.js

@@ -1,0 +1,96 @@
+#app {
+
+  .main-container {
+    min-height: 100%;
+    // transition: margin-left .28s;
+    // margin-left: $sideBarWidth;
+    position: relative;
+  }
+
+  .sidebar-container {
+    width: $sideBarWidth !important;
+    background-color: $theme;
+    height: calc(100vh - #{$navBarHeight});
+    padding: 11.5px 0;
+    position: fixed;
+    font-size: 0px;
+    bottom: 0;
+    top: $navBarHeight;
+    left: 0;
+    z-index: 6;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .side-item-container{
+      width: 80%;
+      background: #3b82d3;
+      .side-item{
+        width:100%;
+        height:81px;
+        padding: 0 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid $theme;
+      }
+      span{
+        font-size: 11.5px;
+        margin-top: 14.5px;
+        color: $menuText;
+        font-weight: bold;
+      }
+      svg{
+        font-size: 21px;
+        color: $menuText;
+      }
+      a{
+        position: relative;
+      }
+      .router-link-active{
+        background: $menuHover;
+        &::before{
+          position: absolute;
+          left: 0;
+          top: 0;
+          height:calc(100% - 1px);
+          content: '';
+          background: $menuText;
+          width: 3px;
+        }
+        .triangle-right{
+          position: absolute;
+          height: 100%;
+          width: 8px;
+          left: 0;
+          top: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::before{
+            width:0;
+            height:0;
+            border-width:5px 0 5px 5px;
+            border-style:solid;
+            border-color:transparent transparent transparent $menuText;/*透明 透明 透明 灰*/
+            margin: auto 0;
+            content: '';
+          }
+        }
+        
+      }
+    }
+
+    .el-scrollbar {
+      height: 100%;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+}

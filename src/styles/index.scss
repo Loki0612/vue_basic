@@ -1,0 +1,182 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+
+// 行内表单样式
+.searchForm{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-items: center;
+  margin-top: 20px;
+  .search-btn-group{
+    margin-left: auto;
+  }
+}
+
+//分页样式
+.paginationBox{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+//表格按钮组
+.table-btn-group{
+  flex:1;
+  padding: 0 20px;
+  &> button{
+    margin: 0 0 10px ;
+  }
+}
+
+//dialog表单样式
+.clickCell {
+  color: $theme;
+  cursor: pointer;
+}
+.el-dialog__header{
+  border-bottom: 1px solid #DCDFE6;
+  padding-bottom: 19px;
+}
+
+.formBox{
+  .formItem{
+    margin: 0 15px;
+  }
+  .formRow{
+    margin: 25px 0;
+  }
+}
+.el-dialog__header {
+  background-color: #f6f6f6;
+  border: none;
+  .el-dialog__title {
+    font-weight: bold;
+  }
+}
+.el-dialog__body {
+  padding: 16px 20px;
+  .el-row {
+    margin: 0 0 22px 0;
+  }
+  .el-row:last-of-type {
+    margin: 0;
+  }
+}
+.el-form-item {
+  margin-bottom: 15px;
+}
+.el-cascader,
+.el-select {
+  width: 100%;
+}
+
+//分割线
+.el-divider--horizontal{
+  margin: 9px 0 10px;
+}
+
+//滚动条
+::-webkit-scrollbar {
+  width: 8px; /* 纵向滚动条*/
+  height: 8px; /* 横向滚动条 */
+  background-color: #fff;
+}
+
+/*定义滚动条轨道 内阴影*/
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background-color: #ccc;
+}
+
+/*定义滑块 内阴影*/
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background-color: $theme;
+  border-radius: 10px;
+}
+
+/*表格列值为空时 显示 -- */
+.cell:empty::before{
+  content:'--';
+}
+
+// 描述列表 修改label默认样式
+.el-descriptions-item__label{
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Dialog默认样式修改*/
+.basicDialog{
+  margin-top: 7vh !important;
+  .main{
+    height: 60vh;
+    overflow-y: scroll;
+  }
+}

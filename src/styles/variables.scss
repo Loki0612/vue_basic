@@ -1,0 +1,26 @@
+$menuText:#fff;
+
+$theme:#4291eb;
+$menuBg:#4291eb;
+$menuHover:#3370b5;
+$menuBg:#3b82d3;
+$black: #333333;
+$darkGray: #666666;
+$themeGray: #dcdfe6;
+
+
+$sideBarWidth: 102px;
+$navBarHeight: 58px;
+$hamBarHeight: 40px;
+
+:export {
+  menuText: $menuText;
+  theme: $theme;
+  menuHover: $menuHover;
+  menuBg: $menuBg;
+  sideBarWidth: $sideBarWidth;
+  hamBarHeight: $hamBarHeight;
+  black: $black;
+  darkGray: $darkGray;
+  themeGray: $themeGray;
+}
